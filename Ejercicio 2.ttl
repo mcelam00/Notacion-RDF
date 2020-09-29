@@ -42,3 +42,36 @@ _:stm3 rdf:type rdf:Statement .
 _:stm3 rdf:subject m:pizzaOpera .
 _:stm3 rdf:predicate bo:hasPrice .
 _:stm3 rdf:object "7.00"^^xsd:float .
+
+
+SIMPLIFICADO:
+
+@prefix b:<http://pizza-larry.fi/> .
+@prefix bo:<http://business.com/ontology/> .
+@prefix m:<http://pizza-larry.fi/menu/> .
+@prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix fo:<http://food.com/ontology/> .
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix s:<pizza-larry.fi/staff/> .
+
+b:about bo:sells m:pizzaCardinal .
+m:pizzaCardinal bo:hasPrice "5.50"^^xsd:float; fo:hasTopping fo:shrimp; fo:hasTopping fo:ham .
+
+s:manager bo:defines _:stm1 .
+_:stm1 rdf:type rdf:Statement; rdf:subject m:pizzaCardinal; rdf:predicate bo:hasPrice; rdf:object "5.50"^^xsd:float .
+
+
+
+b:about bo:sells m:pizzaLake .
+m:pizzaLake bo:hasPrice "6.50"^^xsd:float; fo:hasTopping fo:bacon; fo:hasTopping fo:ham .
+
+s:manager bo:defines _:stm2 .
+_:stm2 rdf:type rdf:Statement; rdf:subject m:pizzaLake; rdf:predicate bo:hasPrice; rdf:object "6.50"^^xsd:float .
+
+
+
+b:about bo:sells m:pizzaOpera .
+m:pizzaOpera bo:hasPrice "7.00"^^xsd:float; fo:hasTopping fo:ham; fo:hasTopping fo:tunafish .
+
+s:manager bo:defines _:stm3 .
+_:stm3 rdf:type rdf:Statement; rdf:subject m:pizzaOpera; rdf:predicate bo:hasPrice; rdf:object "7.00"^^xsd:float 
