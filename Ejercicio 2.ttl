@@ -2,5 +2,11 @@
 @prefix bo:<http://business.com/ontology/> .
 @prefix m:<http://pizza-larry.fi/menu/> .
 @prefix xsd:<http://www.w3.org/2001/XMLSchema#> .
+@prefix fo:<http://food.com/ontology/> .
 @prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix s:<pizza-larry.fi/staff/> .
+
+b:about bo:sells m:pizzaCardinal .
+m:pizzaCardinal bo:hasPrice "5.50"^^xsd:float .
+m:pizzaCardinal fo:hasTopping fo:shrimp .
+m:pizzaCardinal fo:hasTopping fo:ham .
