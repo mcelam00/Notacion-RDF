@@ -41,7 +41,7 @@ s:manager bo:defines _:stm3 .
 _:stm3 rdf:type rdf:Statement .
 _:stm3 rdf:subject m:pizzaOpera .
 _:stm3 rdf:predicate bo:hasPrice .
-_:stm3 rdf:object "7.00"^^xsd:float .
+_:stm3 rdf:object "7.00"^^xsd:float 
 
 
 SIMPLIFICADO:
