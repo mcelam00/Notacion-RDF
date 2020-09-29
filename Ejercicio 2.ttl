@@ -16,3 +16,10 @@ _:stm1 rdf:type rdf:Statement .
 _:stm1 rdf:subject m:pizzaCardinal .
 _:stm1 rdf:predicate bo:hasPrice .
 _:stm1 rdf:object "5.50"^^xsd:float .
+
+
+
+b:about bo:sells m:pizzaLake .
+m:pizzaLake bo:hasPrice "6.50"^^xsd:float .
+m:pizzaLake fo:hasTopping fo:bacon .
+m:pizzaLake fo:hasTopping fo:ham .
