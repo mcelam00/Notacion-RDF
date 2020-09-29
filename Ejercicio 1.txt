@@ -1,0 +1,10 @@
+1.@prefix sf:<http://www.smith-family.com/family#> .
+
+sf:Pedro sf:hasChild sf:Juan .
+sf:Pedro sf:hasSon sf:Mario .
+sf:Pedro sf:hasFirstName "Pedro" .
+sf:Pedro sf:hasSurname "Andrades" .
+sf:Pedro sf:hasAge "52" .
+sf:Natalia sf:hasHusband sf:Mario .
+sf:Natalia sf:hasChild sf:Jorge
+
