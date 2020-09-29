@@ -36,3 +36,9 @@ b:about bo:sells m:pizzaOpera .
 m:pizzaOpera bo:hasPrice "7.00"^^xsd:float .
 m:pizzaOpera fo:hasTopping fo:ham .
 m:pizzaOpera fo:hasTopping fo:tunafish .
+
+s:manager bo:defines _:stm3 .
+_:stm3 rdf:type rdf:Statement .
+_:stm3 rdf:subject m:pizzaOpera .
+_:stm3 rdf:predicate bo:hasPrice .
+_:stm3 rdf:object "7.00"^^xsd:float .
