@@ -23,3 +23,9 @@ b:about bo:sells m:pizzaLake .
 m:pizzaLake bo:hasPrice "6.50"^^xsd:float .
 m:pizzaLake fo:hasTopping fo:bacon .
 m:pizzaLake fo:hasTopping fo:ham .
+
+s:manager bo:defines _:stm2 .
+_:stm2 rdf:type rdf:Statement .
+_:stm2 rdf:subject m:pizzaLake .
+_:stm2 rdf:predicate bo:hasPrice .
+_:stm2 rdf:object "6.50"^^xsd:float .
