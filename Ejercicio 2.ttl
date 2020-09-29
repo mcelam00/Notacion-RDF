@@ -29,3 +29,10 @@ _:stm2 rdf:type rdf:Statement .
 _:stm2 rdf:subject m:pizzaLake .
 _:stm2 rdf:predicate bo:hasPrice .
 _:stm2 rdf:object "6.50"^^xsd:float .
+
+
+
+b:about bo:sells m:pizzaOpera .
+m:pizzaOpera bo:hasPrice "7.00"^^xsd:float .
+m:pizzaOpera fo:hasTopping fo:ham .
+m:pizzaOpera fo:hasTopping fo:tunafish .
